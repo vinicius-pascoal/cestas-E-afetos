@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <WallpaperContainer>
       <div className="w-dvw">
+        {/* TODO melhorar header */}
         <header className="bg-orange-200 border-b-4 border-b-amber-500 ">
           <Image
             className="rounded-full"
@@ -17,6 +18,7 @@ export default function Home() {
           />
         </header>
         <div>
+          {/* TODO componente de cesta*/}
           <h1 className="text-4xl text-center font-bold mt-8">
             Bem-vindo ao Next.js!
           </h1>
