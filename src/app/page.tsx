@@ -7,9 +7,9 @@ export default function Home() {
     <WallpaperContainer>
       <div className="w-dvw">
         {/* TODO melhorar header */}
-        <header className="bg-orange-200 border-b-4 border-b-amber-500 ">
+        <header className="mb-24 shadow-md shadow-amber-700 bg-[#dd7630] border-b-4 border-b-amber-700 h-14">
           <Image
-            className="rounded-full"
+            className=" shadow-md shadow-amber-700 rounded-full relative -bottom-5 ml-2 border-amber-700 border-4"
             src={logo}
             alt="Next.js logo"
             width={130}
