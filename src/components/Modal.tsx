@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+
+import cafesolo from "../img/cestas/cafeManhaSolo.jpg";
 
 export default function Modal() {
   const [open, setOpen] = useState(false);
@@ -40,23 +43,38 @@ export default function Modal() {
               onClick={(e) => e.stopPropagation()} // bloqueia clique dentro
             >
               <div className="text-center">
-                <h2 className="text-xl font-bold mb-4 text-amber-700">Cesta cafe da manha</h2>
-                <p className="text-gray-700 mb-6">
-                  Cesto em linhão
-                  Flores naturais
-                  1 bolo caseiro
-                  1 suco natural
-                  1 cappuccino artesanal
-                  1 waffle
-                  requeijao
-                  2 Frutas
-                  1 mini quiche queijo
-                  mini pães
-                  Croassant
-                  Pretzel
-                  Mini paes Doces
-                  Suspiros
+                <div className="flex items-center mb-4">
+                  <Image
+                    src={cafesolo}
+                    alt="Cesta de Café da Manhã"
+                    width={100}
+                    height={100}
+                    className=" mr-2 rounded-full border-amber-700 border-4 w-24 h-24"
+                  />
+                  <h2 className="text-xl font-bold mb-4 text-amber-700">Cesta cafe da manha</h2>
+                </div>
+                <div className="border-b-2 border-amber-700 mb-4"></div>
+                <ul className="list-disc pl-5 mb-4 text-left text-gray-700">
+                  <li>
+                    <span className="font-semibold">Itens incluídos:</span>
+                  </li>
+                  <li>Cesto em linhão</li>
+                  <li>Flores naturais</li>
+                  <li>1 bolo caseiro</li>
+                  <li>1 suco natural</li>
+                  <li>1 cappuccino artesanal</li>
+                  <li>1 waffle</li>
+                  <li>Requeijão</li>
+                  <li>2 Frutas</li>
+                  <li>1 mini quiche queijo</li>
+                  <li>Mini pães</li>
+                  <li>Croissant</li>
+                  <li>Pretzel</li>
+                  <li>Mini pães doces</li>
+                  <li>Suspiros</li>
 
+                </ul>
+                <p className="text-gray-700 mb-6">
                   R$ 280 + Entrega
                 </p>
                 <button
