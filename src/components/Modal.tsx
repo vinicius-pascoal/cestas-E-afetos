@@ -26,7 +26,7 @@ export default function Modal() {
           >
             {/* Backdrop com transparência real */}
             <div
-              className="absolute inset-0 bg-[rgba(0,0,0,0.4)]"
+              className="absolute inset-0 bg-[rgba(0,0,0,0.55)]"
               onClick={() => setOpen(false)}
             />
 

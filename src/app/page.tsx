@@ -18,13 +18,8 @@ export default function Home() {
           />
         </header>
         <div className="h-screen overflow-y-auto">
-          {/* TODO componente de cesta fix: ultima cesta ta sendo comida / ajustat o componenete com um array*/}
-          <ItemCard tipo="cafe" />
-          <ItemCard tipo="cafeCasal" />
-          <ItemCard tipo="cervejas" />
-          <ItemCard tipo="flores" />
-          <ItemCard tipo="vinho" />
-
+          {/* TODO componente de cesta fix: ultima cesta ta sendo comida / ajustat o componenete com um array fazer ser apenas uma chamada */}
+          <ItemCard />
         </div>
       </div>
     </WallpaperContainer>
