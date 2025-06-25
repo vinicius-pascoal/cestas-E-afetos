@@ -19,11 +19,11 @@ export default function Home() {
         </header>
         <div className="h-screen overflow-y-auto">
           {/* TODO componente de cesta fix: ultima cesta ta sendo comida / ajustat o componenete com um array*/}
-          <ItemCard tipo=" Cesta de Café da Manhã" />
-          <ItemCard tipo=" Cesta de Café da Manhã casal" />
-          <ItemCard tipo=" Cesta de Café da Manhã casal" />
-          <ItemCard tipo=" Cesta de Café da Manhã casal" />
-          <ItemCard tipo=" Cesta de Café da Manhã casal" />
+          <ItemCard tipo="cafe" />
+          <ItemCard tipo="cafeCasal" />
+          <ItemCard tipo="cervejas" />
+          <ItemCard tipo="flores" />
+          <ItemCard tipo="vinho" />
 
         </div>
       </div>

@@ -42,7 +42,22 @@ export default function Modal() {
               <div className="text-center">
                 <h2 className="text-xl font-bold mb-4 text-amber-700">Cesta cafe da manha</h2>
                 <p className="text-gray-700 mb-6">
-                  Conteúdo do modal. Clique fora ou no botão abaixo para fechar.
+                  Cesto em linhão
+                  Flores naturais
+                  1 bolo caseiro
+                  1 suco natural
+                  1 cappuccino artesanal
+                  1 waffle
+                  requeijao
+                  2 Frutas
+                  1 mini quiche queijo
+                  mini pães
+                  Croassant
+                  Pretzel
+                  Mini paes Doces
+                  Suspiros
+
+                  R$ 280 + Entrega
                 </p>
                 <button
                   onClick={() => setOpen(false)}
