@@ -1,5 +1,7 @@
 import Image from "next/image";
 import cafeSolo from "../img/cestas/cafeManhaSolo.jpg";
+import Modal from "./Modal";
+
 type ItemCardProps = {
   tipo: string;
 };
@@ -26,9 +28,7 @@ export default function ItemCard({ tipo }: ItemCardProps) {
           <li>Frutas da estação</li>
           <li>Doces caseiros</li>
         </ul>
-        <button className="mt-4 bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors">
-          + Detalhes
-        </button>
+        <Modal />
       </div>
     </div>
   )
