@@ -77,6 +77,16 @@ export default function Modal() {
                 <p className="text-gray-700 mb-6">
                   R$ 280 + Entrega
                 </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20gostaria%20de%20comprar%20a%20Cesta%20de%20Caf%C3%A9%20da%20Manh%C3%A3!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors"
+                >
+                  Comprar
+                </a>
+              </div>
+              <div className="mt-4 flex justify-end">
                 <button
                   onClick={() => setOpen(false)}
                   className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"

@@ -5,6 +5,7 @@ import Modal from "./Modal";
 
 type CardItemProps = {
   nome: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   image: any;
   description: string;
   items: string[];
