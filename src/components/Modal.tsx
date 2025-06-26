@@ -6,7 +6,15 @@ import Image from "next/image";
 
 import cafesolo from "../img/cestas/cafeManhaSolo.jpg";
 
-export default function Modal() {
+type ModalItemProps = {
+  nome: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  image: any;
+  itemsCompleto: string[];
+  preco: string;
+};
+
+export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -35,7 +43,7 @@ export default function Modal() {
 
             {/* Modal em si */}
             <motion.div
-              className="relative z-10 w-[90%] max-w-md bg-white rounded-2xl shadow-xl p-6"
+              className="relative z-10 w-[90%] max-w-md bg-white rounded-2xl shadow-xl p-6 border-4 border-amber-700 border-double border-opacity-80"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
@@ -51,34 +59,23 @@ export default function Modal() {
                     height={100}
                     className=" mr-2 rounded-full border-amber-700 border-4 w-24 h-24"
                   />
-                  <h2 className="text-xl font-bold mb-4 text-amber-700">Cesta cafe da manha</h2>
+                  <h2 className="text-xl font-bold mb-4 text-amber-700">{nome}</h2>
                 </div>
-                <div className="border-b-2 border-amber-700 mb-4"></div>
+                <div className="border-b-2 border-dashed border-amber-700 mb-4"></div>
                 <ul className="list-disc pl-5 mb-4 text-left text-gray-700">
                   <li>
                     <span className="font-semibold">Itens incluídos:</span>
                   </li>
-                  <li>Cesto em linhão</li>
-                  <li>Flores naturais</li>
-                  <li>1 bolo caseiro</li>
-                  <li>1 suco natural</li>
-                  <li>1 cappuccino artesanal</li>
-                  <li>1 waffle</li>
-                  <li>Requeijão</li>
-                  <li>2 Frutas</li>
-                  <li>1 mini quiche queijo</li>
-                  <li>Mini pães</li>
-                  <li>Croissant</li>
-                  <li>Pretzel</li>
-                  <li>Mini pães doces</li>
-                  <li>Suspiros</li>
+                  {itemsCompleto?.map((item, index) => (
+                    <li key={index} className="text-sm">{item}</li>
+                  ))}
 
                 </ul>
                 <p className="text-gray-700 mb-6">
-                  R$ 280 + Entrega
+                  {preco} + Entrega
                 </p>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1,%20gostaria%20de%20comprar%20a%20Cesta%20de%20Caf%C3%A9%20da%20Manh%C3%A3!"
+                  href="https://api.whatsapp.com/send?phone=5579991750501&text=Ol%C3%A1,%20gostaria%20de%20comprar%20a%20{nome}%20que%20vi%20no%20seu%20site!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors"

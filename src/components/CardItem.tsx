@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Modal from "./Modal";
+import { i } from "framer-motion/client";
 
 type CardItemProps = {
   nome: string;
@@ -9,9 +10,11 @@ type CardItemProps = {
   image: any;
   description: string;
   items: string[];
+  itemsCompleto: string[];
+  preco: string;
 };
 
-export default function CardItem({ nome, image, description, items }: CardItemProps) {
+export default function CardItem({ nome, image, description, items, preco, itemsCompleto }: CardItemProps) {
   return (
     <div className="m-7 mt-24 w-full max-w-md">
       <div className="shadow-md shadow-black flex bg-[#dd7630] text-white p-4 h-16">
@@ -31,7 +34,7 @@ export default function CardItem({ nome, image, description, items }: CardItemPr
             <li key={index} className="text-sm">{item}</li>
           ))}
         </ul>
-        <Modal />
+        <Modal nome={nome} image={image} itemsCompleto={itemsCompleto} preco={preco} />
       </div>
     </div>
   );
