@@ -22,7 +22,6 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
 
   return (
     <>
-      {/* Botão para abrir o modal */}
       <button
         onClick={() => setOpen(true)}
         className="mt-4 bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors"
@@ -74,11 +73,11 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
                   ))}
 
                 </ul>
-                <p className="text-gray-700 mb-6">
+                <p className="text-gray-700 font-bold mb-6">
                   {preco} + Entrega
                 </p>
-                {/* link para o whatsapp com o nome da cesta pegando da variavel nome e a ajustando na url*/}
-
+              </div>
+              <div className="mt-4 flex justify-between">
                 <a
                   href={whatsappUrl}
                   target="_blank"
@@ -87,13 +86,11 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
                 >
                   Comprar
                 </a>
-              </div>
-              <div className="mt-4 flex justify-end">
                 <button
                   onClick={() => setOpen(false)}
-                  className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+                  className="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
                 >
-                  Fechar
+                  X
                 </button>
               </div>
             </motion.div>
