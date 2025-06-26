@@ -56,7 +56,7 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
               <div className="text-center">
                 <div className="flex items-center mb-4">
                   <Image
-                    src={cafesolo}
+                    src={image || cafesolo}
                     alt="Cesta de Café da Manhã"
                     width={100}
                     height={100}
