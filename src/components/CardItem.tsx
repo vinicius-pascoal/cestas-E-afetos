@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Modal from "./Modal";
-import { i } from "framer-motion/client";
 
 type CardItemProps = {
   nome: string;
