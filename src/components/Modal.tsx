@@ -46,7 +46,7 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
 
             {/* Modal em si */}
             <motion.div
-              className="relative z-10 w-[90%] max-w-md bg-white rounded-2xl shadow-xl p-6 border-4 border-amber-700 border-double border-opacity-80"
+              className="relative z-10 w-[90%] max-w-md bg-amber-100 rounded-2xl shadow-xl p-6 border-4 border-amber-700 border-double border-opacity-80"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}

@@ -22,7 +22,7 @@ const waveVariants = (delay: number = 0) => ({
 
 export default function WallpaperContainer({ children }: Props) {
   return (
-    <div className="relative bg-white overflow-hidden min-h-screen">
+    <div className="relative bg-amber-100 overflow-hidden min-h-screen">
       {/* Conteúdo principal */}
       <div className="relative z-10 items-center justify-center min-h-screen max-h-screen ">
         {children}

@@ -18,7 +18,7 @@ export default function Home() {
           />
         </header>
         <div className="h-screen overflow-y-auto">
-          {/* TODO componente de cesta fix: ultima cesta ta sendo comida / ajustat o componenete com um array fazer ser apenas uma chamada */}
+          {/* TODO componente de cesta fix: ultima cesta ta sendo comida */}
           <ItemCard />
         </div>
       </div>
