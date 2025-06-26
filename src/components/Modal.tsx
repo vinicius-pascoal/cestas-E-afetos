@@ -18,7 +18,8 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
   const [open, setOpen] = useState(false);
 
   const whatsappMessage = `Olá, gostaria de comprar a ${nome}.`;
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=5579991750501&text=${encodeURIComponent(whatsappMessage)}`;
+  const numero = `79991750501`
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=55${(numero)}&text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <>
