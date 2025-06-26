@@ -17,6 +17,9 @@ type ModalItemProps = {
 export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemProps) {
   const [open, setOpen] = useState(false);
 
+  const whatsappMessage = `Olá, gostaria de comprar a cesta de ${nome}.`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=5579991750501&text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <>
       {/* Botão para abrir o modal */}
@@ -74,8 +77,10 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
                 <p className="text-gray-700 mb-6">
                   {preco} + Entrega
                 </p>
+                {/* link para o whatsapp com o nome da cesta pegando da variavel nome e a ajustando na url*/}
+
                 <a
-                  href="https://api.whatsapp.com/send?phone=5579991750501&text=Ol%C3%A1,%20gostaria%20de%20comprar%20a%20{nome}%20que%20vi%20no%20seu%20site!"
+                  href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors"
