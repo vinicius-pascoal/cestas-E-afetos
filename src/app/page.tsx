@@ -17,8 +17,7 @@ export default function Home() {
             priority
           />
         </header>
-        <div className="h-screen overflow-y-auto">
-          {/* TODO componente de cesta fix: ultima cesta ta sendo comida */}
+        <div className="h-screen overflow-y-scroll">
           <ItemCard />
         </div>
       </div>
