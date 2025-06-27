@@ -7,6 +7,7 @@ import flores from "../img/cestas/floresBombons.jpg";
 import vinho from "../img/cestas/queijosVinho.jpg";
 
 export default function ItemCard() {
+  //TODO adiconar o restante das fotos e revisar as informacoes
   const cestas = {
     cafeCasal: {
       nome: "Cesta de Café da Manhã Casal",

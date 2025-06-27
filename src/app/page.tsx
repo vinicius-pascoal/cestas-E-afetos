@@ -11,7 +11,7 @@ export default function Home() {
           <Image
             className=" rounded-full relative -bottom-5 -right-4/6 ml-2 border-amber-700 border-4 w-28 h-28"
             src={logo}
-            alt="Next.js logo"
+            alt="logo cestas"
             width={130}
             height={130}
             priority
