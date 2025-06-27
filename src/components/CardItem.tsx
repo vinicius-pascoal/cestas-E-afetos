@@ -24,7 +24,7 @@ export default function CardItem({ nome, image, description, items, preco, items
           height={100}
           className="relative -top-16 mr-2 rounded-full border-amber-700 border-4 w-24 h-24"
         />
-        <h1 className="font-bold">{nome}</h1>
+        <h1 className="font-bold max-w-2/3">{nome}</h1>
       </div>
       <div className="bg-amber-700 text-white p-4 rounded-t-none rounded-lg shadow-md">
         <p>{description}</p>

@@ -54,7 +54,7 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
               onClick={(e) => e.stopPropagation()} // bloqueia clique dentro
             >
               <div className="text-center">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center justify-around mb-4">
                   <Image
                     src={image || cafesolo}
                     alt="Cesta de Café da Manhã"
@@ -62,7 +62,7 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
                     height={100}
                     className=" mr-2 rounded-full border-amber-700 border-4 w-24 h-24"
                   />
-                  <h2 className="text-xl font-bold mb-4 text-amber-700">{nome}</h2>
+                  <h2 className="text-xl font-bold mb-4 text-amber-700 max-w-2/3">{nome}</h2>
                 </div>
                 <div className="border-b-2 border-dashed border-amber-700 mb-4"></div>
                 <ul className="list-disc pl-5 mb-4 text-left text-gray-700">
