@@ -10,7 +10,7 @@ export default function ItemCard() {
   const cestas = {
     cafeCasal: {
       nome: "Cesta de Café da Manhã Casal",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma cesta especial para casais, repleta de itens artesanais e naturais para um café da manhã inesquecível.",
       items: [
@@ -41,7 +41,7 @@ export default function ItemCard() {
     },
     cafe: {
       nome: "Cesta de Café da Manhã",
-      image: cafeSolo, // substitua pela imagem correta
+      image: cafeSolo,
       description:
         "Desfrute de uma deliciosa cesta de café da manhã com itens artesanais selecionados para tornar a manhã especial.",
       items: [
@@ -70,7 +70,7 @@ export default function ItemCard() {
     },
     cafeSergipano: {
       nome: "Cesta de Café da Manhã Sergipano",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma homenagem à culinária nordestina com sabores típicos de Sergipe, ideal para um café da manhã regional e acolhedor.",
       items: [
@@ -101,7 +101,7 @@ export default function ItemCard() {
     },
     lanche: {
       nome: "Cesta Lanche",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma cesta deliciosa para um lanche completo e aconchegante, com bebidas quentes e quitutes artesanais.",
       items: [
@@ -131,7 +131,7 @@ export default function ItemCard() {
     },
     floresFrutas: {
       nome: "Cesta Flores e Frutas",
-      image: flores, // substitua pela imagem correta
+      image: flores,
       description:
         "Uma cesta leve e elegante com flores naturais e frutas frescas da estação, perfeita para presentear com frescor e carinho.",
       items: [
@@ -157,7 +157,7 @@ export default function ItemCard() {
     },
     proseccoFlores: {
       nome: "Cesta Prosecco e Flores",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma cesta refinada com flores naturais, tábua de frios e acompanhamentos selecionados, ideal para momentos de celebração.",
       items: [
@@ -187,7 +187,7 @@ export default function ItemCard() {
     },
     vegana: {
       nome: "Cesta Vegana",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma opção saudável e 100% vegetal com sabores artesanais e ingredientes naturais, perfeita para quem busca equilíbrio e consciência.",
       items: [
@@ -214,7 +214,7 @@ export default function ItemCard() {
     },
     floresBombons: {
       nome: "Cesta Flores e Bombons",
-      image: cafeCasal, // substitua pela imagem correta
+      image: cafeCasal,
       description:
         "Uma cesta elegante com flores naturais e deliciosos bombons para adoçar qualquer ocasião especial.",
       items: [
@@ -235,7 +235,7 @@ export default function ItemCard() {
     },
     cervejas: {
       nome: "Cesta das Cervejas",
-      image: cervejas, // substitua pela imagem correta
+      image: cervejas,
       description:
         "Uma cesta perfeita para os amantes de cerveja, com variedade de rótulos, acompanhamentos e uma tábua de frios especial.",
       items: [
@@ -263,7 +263,7 @@ export default function ItemCard() {
     },
     queijosVinho: {
       nome: "Cesta Queijos e Vinho",
-      image: vinho, // substitua pela imagem correta
+      image: vinho,
       description:
         "Uma cesta sofisticada com vinho chileno ou argentino, tábua de frios e acompanhamentos selecionados para momentos especiais.",
       items: [
