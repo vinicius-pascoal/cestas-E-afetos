@@ -15,7 +15,7 @@ type CardItemProps = {
 
 export default function CardItem({ nome, image, description, items, preco, itemsCompleto }: CardItemProps) {
   return (
-    <div className="first:mt-24  m-7 mb-24 w-full max-w-md">
+    <div className="first:mt-24 last:mb-24 m-7 mb-16 w-full max-w-md">
       <div className="shadow-md shadow-black flex bg-[#dd7630] text-white p-4 h-16">
         <Image
           src={image}
