@@ -17,9 +17,8 @@ type ModalItemProps = {
 export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemProps) {
   const [open, setOpen] = useState(false);
 
-  {/* TODO mudar o numero antes de jogar para producao */}
   const whatsappMessage = `Olá, gostaria de comprar a ${nome}.`;
-  const numero = `79991750501`
+  const numero = `79988210551`
   const whatsappUrl = `https://api.whatsapp.com/send?phone=55${(numero)}&text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
