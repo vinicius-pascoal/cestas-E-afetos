@@ -1,20 +1,20 @@
 "use client";
 
 import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 type Props = {
   children: ReactNode;
 };
 
 // Animação de deslocamento lateral contínuo
-const waveVariants = (delay: number = 0) => ({
+const waveVariants = (delay = 0): Variants => ({
   animate: {
     x: [0, -1440],
     transition: {
       repeat: Infinity,
       duration: 20,
-      ease: "linear",
+      ease: [0.25, 0.25, 0.75, 0.75], // substituindo "linear"
       delay,
     },
   },
