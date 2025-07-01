@@ -10,11 +10,17 @@ type CardItemProps = {
   description: string;
   itemsCompleto: string[];
   preco: string;
+  novo: boolean;
 };
 
-export default function CardItem({ nome, image, description, preco, itemsCompleto }: CardItemProps) {
+export default function CardItem({ nome, image, description, preco, itemsCompleto , novo }: CardItemProps) {
   return (
     <div className="first:mt-24 last:mb-24 m-7 mb-16 w-full max-w-md">
+      {novo && (
+        <span className="z-0 relative left-11/12 -bottom-4 bg-amber-700 text-white px-2 py-1 rounded-full text-sm font-semibold">
+          Novo
+        </span>
+      )}
       <div className="shadow-md shadow-black flex bg-[#dd7630] text-white p-4 h-16">
         <Image
           src={image}

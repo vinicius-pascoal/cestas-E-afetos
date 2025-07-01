@@ -9,7 +9,7 @@ export default function Home() {
       <div className="w-dvw">
         <header className=" bg-[#dd7630] border-b-4 border-b-amber-700 h-14">
           <Image
-            className=" rounded-full relative -bottom-5 -right-4/6 ml-2 border-amber-700 border-4 w-28 h-28"
+            className=" z-10 rounded-full relative -bottom-5 -right-4/6 ml-2 border-amber-700 border-4 w-28 h-28"
             src={logo}
             alt="logo cestas"
             width={130}
