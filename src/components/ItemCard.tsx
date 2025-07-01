@@ -14,12 +14,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma cesta especial para casais, repleta de itens artesanais e naturais para um café da manhã inesquecível.",
-      items: [
-        "Café orgânico",
-        "Mini coador individual",
-        "Bolo caseiro",
-        "Pães artesanais"
-      ],
       itemsCompleto: [
         "Cesto em linhão com alças de couro",
         "Flores naturais",
@@ -45,12 +39,6 @@ export default function ItemCard() {
       image: cafeSolo,
       description:
         "Desfrute de uma deliciosa cesta de café da manhã com itens artesanais selecionados para tornar a manhã especial.",
-      items: [
-        "Cappuccino artesanal",
-        "Bolo caseiro",
-        "Mini pães",
-        "Frutas frescas"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "Flores naturais",
@@ -74,12 +62,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma homenagem à culinária nordestina com sabores típicos de Sergipe, ideal para um café da manhã regional e acolhedor.",
-      items: [
-        "Cuscuz temperado",
-        "Macaxeira de forno",
-        "Mungunzá",
-        "Café orgânico"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "1 mini coador individual",
@@ -105,12 +87,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma cesta deliciosa para um lanche completo e aconchegante, com bebidas quentes e quitutes artesanais.",
-      items: [
-        "Chocolate quente",
-        "Bolo caseiro",
-        "Pães de queijo",
-        "Bolo de rolo"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "Flores naturais",
@@ -135,12 +111,6 @@ export default function ItemCard() {
       image: flores,
       description:
         "Uma cesta leve e elegante com flores naturais e frutas frescas da estação, perfeita para presentear com frescor e carinho.",
-      items: [
-        "Flores naturais",
-        "Uvas",
-        "Morangos",
-        "Kiwi"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "Flores naturais",
@@ -161,12 +131,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma cesta refinada com flores naturais, tábua de frios e acompanhamentos selecionados, ideal para momentos de celebração.",
-      items: [
-        "Prosecco",
-        "Tábua de frios",
-        "Flores naturais",
-        "Pão artesanal"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "Flores naturais",
@@ -191,12 +155,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma opção saudável e 100% vegetal com sabores artesanais e ingredientes naturais, perfeita para quem busca equilíbrio e consciência.",
-      items: [
-        "Bolo banana vegano",
-        "Sanduíche natural vegano",
-        "Café orgânico",
-        "Frutas frescas"
-      ],
       itemsCompleto: [
         "Cesto em linhão",
         "Flores naturais",
@@ -218,12 +176,6 @@ export default function ItemCard() {
       image: cafeCasal,
       description:
         "Uma cesta elegante com flores naturais e deliciosos bombons para adoçar qualquer ocasião especial.",
-      items: [
-        "Flores naturais",
-        "Caixa de trufas",
-        "Nutella",
-        "Chocolates"
-      ],
       itemsCompleto: [
         "Flores naturais",
         "Caixa de trufas",
@@ -239,12 +191,6 @@ export default function ItemCard() {
       image: cervejas,
       description:
         "Uma cesta perfeita para os amantes de cerveja, com variedade de rótulos, acompanhamentos e uma tábua de frios especial.",
-      items: [
-        "Cervejas variadas",
-        "Tábua de frios",
-        "Pão de alho",
-        "Palitos crocantes"
-      ],
       itemsCompleto: [
         "Cesto em linhão com alças de couro",
         "2 cervejas em lata",
@@ -267,12 +213,6 @@ export default function ItemCard() {
       image: vinho,
       description:
         "Uma cesta sofisticada com vinho chileno ou argentino, tábua de frios e acompanhamentos selecionados para momentos especiais.",
-      items: [
-        "Vinho chileno/argentino",
-        "Tábua de frios",
-        "Patê",
-        "Pão artesanal"
-      ],
       itemsCompleto: [
         "Cesto em linhão com alças de couro",
         "1 vinho chileno / argentino",
@@ -303,7 +243,6 @@ export default function ItemCard() {
           nome={cesta.nome}
           image={cesta.image}
           description={cesta.description}
-          items={cesta.items}
           preco={cesta.preco}
           itemsCompleto={cesta.itemsCompleto}
         />
