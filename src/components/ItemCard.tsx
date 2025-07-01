@@ -4,6 +4,7 @@ import cafeSolo from "../img/cestas/cafeManhaSolo.jpg";
 import cafeCasal from "../img/cestas/cafeManhaCasal.jpg";
 import cervejas from "../img/cestas/cervejas.jpg";
 import floresBombons from "../img/cestas/floresBombons.jpg";
+import floresFrutas from "../img/cestas/floresFrutas.jpg";
 import vinho from "../img/cestas/queijosVinho.jpg";
 import prosecco from "../img/cestas/proseccoFlores.jpg";
 import lancheInfantil from "../img/cestas/lancheInfatil.jpg";
@@ -143,7 +144,7 @@ export default function ItemCard() {
     },
     floresFrutas: {
       nome: "Cesta Flores e Frutas",
-      image: floresBombons, // TODO TROCAR A FOTO
+      image: floresFrutas, 
       description:
         "Uma cesta leve e elegante com flores naturais e frutas frescas da estação, perfeita para presentear com frescor e carinho.",
       itemsCompleto: [
