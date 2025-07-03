@@ -19,6 +19,15 @@ export default function Home() {
         </header>
         <div className="h-screen overflow-y-scroll">
           <ItemCard />
+        <p className="text-sm mb-14 text-gray-600 text-center font-bold">
+          Desenvolvido por{" "}
+          <a
+            href="https://www.instagram.com/vinicius_pascoal_q/?next=%2F"
+            className="text-blue-500 hover:underline"
+          >
+            Vinicius Pascoal
+          </a>
+        </p>
         </div>
       </div>
     </WallpaperContainer>
