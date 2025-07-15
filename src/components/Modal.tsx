@@ -25,7 +25,7 @@ export default function Modal({ nome, image, itemsCompleto, preco }: ModalItemPr
     <>
       <button
         onClick={() => setOpen(true)}
-        className="mt-4 bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-700 transition-colors"
+        className="mt-4 bg-[#dd7630] text-white px-4 py-2 rounded hover:bg-amber-900 transition-colors"
       >
         + Detalhes
       </button>
