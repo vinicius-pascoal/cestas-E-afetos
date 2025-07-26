@@ -11,10 +11,29 @@ import lancheInfantil from "../img/cestas/lancheInfatil.jpg";
 import vegana from "../img/cestas/vegana.jpg";
 import lanche from "../img/cestas/lanche.jpg";
 import sergipana from "../img/cestas/sergipana.jpg";
+import termicaPais from "../img/cestas/termicaPais.jpg";
 
 export default function ItemCard() {
   //TODO revisar as informacoes
   const cestas = {
+    TermicaDosPais: {
+      nome: "térmica dia dos pais",
+      image: termicaPais,
+      description:
+        "Imagine seu pai , no domingo dedicado a ele recebendo essa térmica recheada de cervejas geladas e petiscos , ele vai amar a surpresa",
+      itemsCompleto: [
+        "1 bolsa térmica preta",
+        "4 cervejas em lata",
+        "Palitos crocantes",
+        "Petisqueira contendo :",
+        "-Castanhas",
+        "-Pimentinha",
+        "-Amendoim japonês",
+        "-Amendoim temperado",
+      ],
+      preco: "R$ 195,00",
+      novo: true
+    },
     lancheInfantil: {
       nome: "Cesta Lanche Infantil",
       image: lancheInfantil,
@@ -144,7 +163,7 @@ export default function ItemCard() {
     },
     floresFrutas: {
       nome: "Cesta Flores e Frutas",
-      image: floresFrutas, 
+      image: floresFrutas,
       description:
         "Uma cesta leve e elegante com flores naturais e frutas frescas da estação, perfeita para presentear com frescor e carinho.",
       itemsCompleto: [
